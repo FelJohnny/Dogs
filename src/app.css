@@ -32,6 +32,9 @@ img{
     max-width: 100%;
 }
 
+input{
+    display: block;
+}
 button{
     display: block;
     font-size: 1rem;
