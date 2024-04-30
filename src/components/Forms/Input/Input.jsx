@@ -1,20 +1,23 @@
 import React from 'react'
 import styles from './Input.module.css'
 
-const Input = (props) => {
+const Input = ({name, label, type, value, onChange,onBlur, error}) => {
   return (
     <div className={styles.wrapper}>
-        <label className={styles.label} htmlFor={props.name}>
-            {props.label}
+        <label className={styles.label} htmlFor={name}>
+            {label}
         </label>
         
         <input 
             className={styles.input}
-            type={props.type}
-            id={props.name}
-            name={props.nam}
+            type={type}
+            id={name}
+            name={name}
+            value={value}
+            onChange={onChange}
+            onBlur={onBlur}
         />
-        <p className={styles.error}>Error</p>
+        {error &&<p className={styles.error}>{error}</p>}
     </div>
   )
 }

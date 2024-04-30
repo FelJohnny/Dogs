@@ -19,9 +19,9 @@
 }
 
 .login{
-    color: #333;
     display: flex;
     align-items: center;
+    color: #333;
 }
 
 .login::after{

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const LoginCreate = () => {
   return (
     <div>
-      
+      Login Criar
     </div>
   )
 }
